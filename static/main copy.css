@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Futura Bt Bk';
+    text-decoration: none;
+}
+
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0,0.8);
+    z-index: 5000;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    animation: modal 1s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.contenido{
+    margin: auto;
+    width: 30%;
+    height: 40%;
+    background:rgba(247, 253, 255, 1.5);
+    border-radius: 10px;
+	top:150px;
+	z-index: 500;
+}
+
+.modal h1 {
+	margin: 100;
+	color:darkblue ;
+	text-align:center;
+  }
+  
+  .modal p {
+	font-size: 18px;
+    color:darkslateblue;
+	text-align:center;
+  }
+
+.btn1{
+ opacity: 0.5;
+ z-index: -50;
+}
+.btn2{
+opacity: 0.5;
+z-index: -50;
+}
+.btn3{
+    opacity: 0.5;
+    z-index: -50;
+}
+.btn4{
+opacity: 0.5;
+z-index: -50;
+}
+.btn5{
+opacity: 0.5;
+z-index: -50;
+}
+.btn6{
+opacity: 0.5;
+z-index: -50;
+}
+.btn7{
+    opacity: 0.5;
+    z-index: -50;
+}
+#cerrar{
+    display: none;
+}
+#cerrar + label{
+    position:fixed;
+    color: #fff;
+    font-size: 25px;
+    z-index: 5000000;
+    background:lightblue;
+    height: 40px;
+    width: 40px;
+	border-radius: 50%;
+    right: 530px;
+	top: 28%;
+    cursor:pointer;
+	text-align:center;
+
+    animation: modal 1s 2s forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#cerrar:checked + label, #cerrar:checked ~ .modal{
+    display: none; 
+}
+
+@keyframes modal{
+    100%{
+    visibility: visible;
+    opacity: 1;
+    }
+}

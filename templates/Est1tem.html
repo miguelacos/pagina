@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<div class="col-md-7">
+  <table class="table table-striped table-hover table-bordered table-sm bg-white">
+    <thead>
+      <tr>
+        <td>fecha y hora</td>
+        <td>id</td>
+        <td>temperatura</td>
+      </tr>
+    </thead>
+    <tbody>
+      {% for contact in contacts1t %}
+      <tr>
+        <td>{{contact.0}}</td>
+        <td>{{contact.1}}</td>
+        <td>{{contact.2}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+</html>
